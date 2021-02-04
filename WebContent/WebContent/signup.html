@@ -1,0 +1,117 @@
+ <html>
+<head>
+
+
+<style>
+	body
+	{
+		margin:0px;
+		background-image:url("ed.jpg");
+		background-size:cover;
+	}
+	#header
+ 	{
+		color:black;
+		font-size:40px;
+		background-color:white;
+		width:1366px;
+ 	}
+	#main
+	{
+		height:290px;
+		width:265px;
+		margin-left:566px;
+		margin-top:50px;
+		border-radius:10px;
+		box-shadow: 0 0 20px black;
+		COLOR:WHITE;
+		FONT-WEIGHT:BOLD;
+		background-color:white;
+		opacity:0.9;
+	}
+	#logins
+	{
+		color:white;
+		font-weight:bold;
+		font-size:15px;
+		background-color: rgb(0,185,124);
+	}
+	#change
+	{
+		color:rgb(0,185,124);
+		margin-left:60px;
+		font-size:17px;
+	}
+	#index
+	{
+	position:relative;
+	margin-left:30px;
+	top:10px;
+	}
+	
+
+</style>
+
+<script>
+
+	function change(str) 
+	{
+			document.getElementById("change").innerHTML=str;
+	}
+ 
+</script>
+
+
+<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist\bootstrap-3.3.7-dist\css\bootstrap.css">
+
+
+</head>
+<body>
+<form action="signup" method="get">
+
+<div id="header">
+<font  style="color:rgb(0,185,124);">Sign Up here</font>
+</div>
+
+
+<div id="logins">
+<font size="5px">Student Signup</font><input onclick="change('STUDENT SIGNUP');" value="STUDENT SIGNUP" type="radio"   name="logins" checked/>
+<font size="5px">Teacher Signup</font><input onclick="change('TEACHER SIGNUP');" value="TEACHER SIGNUP" type="radio"   name="logins"/>
+</div>
+
+<div id="main">
+<span id="change">TEACHER SIGNUP</span> 
+<br>
+<br>
+
+
+<span style="color:black; margin-left:30px;">CHOOSE A USERNAME : :</span>
+<INPUT id="username" CLASS="form-control" STYLE="BORDER-RADIUS:5PX; margin-left:30px; width:200px; margin-" NAME="username" TYPE="TEXT" required/>
+
+
+	
+
+
+<span style="color:black; margin-left:30px;">CHOOSE A PASSWORD : :</span> 
+<INPUT id="password" CLASS="form-control" NAME="password"  STYLE="BORDER-RADIUS:5PX; width:200px; margin-left:30px;" TYPE="password" required/>
+
+
+
+<INPUT style="background-color:rgb(0,185,124); margin-top:10px; margin-left:30px; border-radius:4px; color:white; width:200px;" CLASS="form-control"  type="submit" VALUE="SUBMIT" onclick="return validate()"/>
+<br>
+
+<INPUT style="background-color:rgb(0,185,124); margin-left:30px; border-radius:4px; color:white; width:200px;" CLASS="form-control"  TYPE="RESET" VALUE="RESET"/>
+
+
+<span id="index">
+<a href="index.jsp">LOGIN</a>
+</span>
+
+
+
+</DIV>
+
+
+</form>
+</body>
+</html>
